@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Plantão - Amanda Pedruzzi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🩺 Checklist de Plantão<br><span>Amanda Pedruzzi</span></h1>
+        <input type="file" accept="image/*" id="uploadImagem" onchange="previewImagem(event)">
+        <div id="previewContainer"></div>
+    </header>
+
+    <main>
+        <section>
+            <h2>🔴 Alta Prioridade</h2>
+            <ul>
+                <li><input type="checkbox"> 07:00 - Escala da equipe</li>
+                <li><input type="checkbox"> 07:10 - Exames agendados</li>
+                <li><input type="checkbox"> 07:20 - Checar carrinho de emergência</li>
+                <li><input type="checkbox"> 07:30 - Verificar estoque</li>
+                <li><input type="checkbox"> 07:40 às 09:30 - Avaliação dos críticos</li>
+                <li><input type="checkbox"> 09:00 - Round UTI</li>
+                <li><input type="checkbox"> 09:40 - Procedimentos invasivos</li>
+                <li><input type="checkbox"> 10:00 às 11:20 - Evolução + SAE</li>
+                <li><input type="checkbox"> Receber pacientes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🟡 Média Prioridade</h2>
+            <ul>
+                <li><input type="checkbox"> 14:30 às 17:00 - Prescrições + exames</li>
+                <li><input type="checkbox"> Realizar escala de distribuição dos técnicos</li>
+                <li><input type="checkbox"> Supervisionar equipe</li>
+                <li><input type="checkbox"> Avaliar feridas</li>
+                <li><input type="checkbox"> Participar de rounds</li>
+                <li><input type="checkbox"> 17:10 - Verificar identificação</li>
+                <li><input type="checkbox"> 17:20 - Atualizar SBAR</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🟢 Baixa Prioridade</h2>
+            <ul>
+                <li><input type="checkbox"> 17:30 - Checar unidade</li>
+                <li><input type="checkbox"> 17:40 - Registrar altas</li>
+                <li><input type="checkbox"> 17:50 - Preparar insumos</li>
+                <li><input type="checkbox"> 18:10 - Dar feedback (se necessário)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>📝 Observações Gerais</h2>
+            <textarea rows="6" placeholder="Escreva aqui suas observações do plantão..."></textarea>
+        </section>
+
+        <section>
+            <h2>🚨 SOS Plantão</h2>
+            <ul>
+                <li>❤️ PCR – Drogas, RCP, SBAR</li>
+                <li>💉 Hipoglicemia – Leve/Grave</li>
+                <li>🍬 Hiperglicemia – Conduta</li>
+                <li>⚡ Convulsão – Midazolam/Diazepam</li>
+                <li>🩸 Sepse – Lactato, SF, ATB</li>
+                <li>🧊 Hipertermia – Medidas físicas + antitérmico</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Enf. Amanda Pedruzzi – COREN 0739178</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
